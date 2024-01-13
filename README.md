@@ -1,6 +1,6 @@
 # baekjoon
 Algorithm
 
-This repository for studying algorithms.
+The repository for studying algorithms.
 
 #NoCopyRight
