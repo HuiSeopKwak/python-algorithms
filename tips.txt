@@ -35,3 +35,7 @@ while b1>0: (a>b인 상황에서만)
 
 print(a1) 최대공약수
 print(int((a*b)/a1)) 최소공배수
+
+'스택'은 LIFO로 선입후출이라는 특징도 가지고 있지만, 후보군으로 담고 있다가 늦은 업데이트를 할 때도 유용할 수 있다.
+
+print(" ".join(map(str, num_list))) list join 사용해서 깔끔하게 출력 int형으로 출력하려면 오류가 나기때문에 str로 바꾸어줘야함
