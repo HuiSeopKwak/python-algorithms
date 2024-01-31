@@ -29,6 +29,9 @@ O(N)
     list.insert(a, b) a를 b위치에 추가
     list.remove(3) '3'값을 가지는 인덱스 삭제 / 여러개 있으면 가장 앞에 있는 값 삭제
 
+O(NlogN)
+List.sort의 최악의 경우
+
 최대공약수, 최소공배수 구할때
 while b1>0: (a>b인 상황에서만)
     a1, b1 = b1, a1 % b1
@@ -39,3 +42,9 @@ print(int((a*b)/a1)) 최소공배수
 '스택'은 LIFO로 선입후출이라는 특징도 가지고 있지만, 후보군으로 담고 있다가 늦은 업데이트를 할 때도 유용할 수 있다.
 
 print(" ".join(map(str, num_list))) list join 사용해서 깔끔하게 출력 int형으로 출력하려면 오류가 나기때문에 str로 바꾸어줘야함
+
+value = [list(map(int, input().split())) for _ in range(num)]
+리스트로 여러번 받기
+
+value.sort(key = lambda x : x[1], reverse = True)
+특정 인덱스를 기준으로 정렬하기
