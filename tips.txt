@@ -42,9 +42,15 @@ print(int((a*b)/a1)) 최소공배수
 '스택'은 LIFO로 선입후출이라는 특징도 가지고 있지만, 후보군으로 담고 있다가 늦은 업데이트를 할 때도 유용할 수 있다.
 
 print(" ".join(map(str, num_list))) list join 사용해서 깔끔하게 출력 int형으로 출력하려면 오류가 나기때문에 str로 바꾸어줘야함
+print('{:.2f}'.format(i)) 소수점 .2 번째 자리까지 출력
+round(number,2) 소수점 2의 자리까지 출력
 
 value = [list(map(int, input().split())) for _ in range(num)]
 리스트로 여러번 받기
 
 value.sort(key = lambda x : x[1], reverse = True)
 특정 인덱스를 기준으로 정렬하기
+
+b = format(sum, 'b') #2진수 변환 #bin(sum)[2:]
+o = format(sum, 'o') #8진수 변환 #oct(sum)
+h = format(sum, '#x') #16진수 변환 #붙이면 0x 라고 앞에 진수 알려주는 표시 나옴 #hex(sum)
