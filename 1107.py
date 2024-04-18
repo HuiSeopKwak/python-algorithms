@@ -17,6 +17,6 @@ for i in range(1000001):
 if num != 0:
     print(min_count)
 else:
-    print(len(str(n)))
+    print(min(min_count, len(str(n))))
 
     #틀렸음
