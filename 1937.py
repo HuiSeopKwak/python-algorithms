@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(100_000_000)
+
 def recur(x, y):
     if dp[y][x] != 0:
         return dp[y][x]
@@ -10,7 +13,6 @@ def recur(x, y):
                 dp[y][x] = max(dp[y][x], recur(ex, ey) + 1)
     
     return dp[y][x]
-
 
 n = int(input())
 

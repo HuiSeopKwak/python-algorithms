@@ -54,3 +54,5 @@ value.sort(key = lambda x : x[1], reverse = True)
 b = format(sum, 'b') #2진수 변환 #bin(sum)[2:]
 o = format(sum, 'o') #8진수 변환 #oct(sum)
 h = format(sum, '#x') #16진수 변환 #붙이면 0x 라고 앞에 진수 알려주는 표시 나옴 #hex(sum)
+
+max(map(max, dp)) # 2차원 배열내의 최대값 찾기
