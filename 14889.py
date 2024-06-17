@@ -6,7 +6,6 @@ def check(a):
         if i not in a:
             b.append(i)
     start, link = 0, 0
-    print(a, b)
 
     #start team 점수
     for i in a:
@@ -22,9 +21,10 @@ def check(a):
             
 def select(idx, cnt):
     global arr
-    if cnt >= 2: # a 팀 인원이 절반이 될때
+    if cnt == n//2: # a 팀 인원이 절반이 될때
         if arr[0] == line[0]: # 1번이 들어가는 경우만 고려해주면 정확히 전체의 절반(필요한 경우만 계산가능)
             check(arr)
+        return
     else:
         if idx == n:
             return
@@ -32,11 +32,10 @@ def select(idx, cnt):
         select(idx + 1, cnt + 1)
         arr.pop()
         select(idx + 1, cnt)
-    return
-
+        
 n = int(input())
 li = [list(map(int, input().split())) for _ in range(n)]
-# 계산할 애들 뽑기 위한 리스트
+# 계산할 애들 뽑기 위한 리스트 
 line = [i for i in range(n)]
 minimum = 1_000_000_000
 # 계산할 한팀 수정용 리스트
