@@ -1,6 +1,7 @@
-# baekjoon
-Algorithm
+# Algorithm solving, baekjoon
 
-The repository for studying algorithms.
+**The repository for studying algorithms.**
+
+**Language : Python**
 
 #NoCopyRight
